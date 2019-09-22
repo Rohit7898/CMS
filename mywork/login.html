@@ -23,20 +23,20 @@
 					<input type ="text" name="uname" id="uname" class="form-control form-control-lg m-2" placeholder="Username">
 					<input type ="password" name="pass" id="pass" class="form-control form-control-lg m-2" placeholder="Password">
 					<button class ="btn btn-success float-right m-2" id="login-button" onClick="onclicked()"> SignIn </button>
+                                                                                                   
 
-
-
+			
 				</div>
 
 			</div>
 
 		</div>
-	</div>
+	</div>		
 
 
 
 	<script>
-
+       
        function onclicked(){
          console.log("clicked");
          var usname = document.getElementById("uname").value;
@@ -55,10 +55,10 @@
          {
 
          	alert("You are logged in as "+ usname);
-         	window.location.href( "VendorMenu.html");
+         	window.location.href( "user.html");
          }
-
-         else
+        
+         else 
          	if (usname == vuname && passname == vpass)
          {
 
@@ -66,7 +66,7 @@
          	window.location.href("vendor.html");
          }
 
-         else
+         else 
          	if (usname == adminuname && passname == adminpass)
          {
 
