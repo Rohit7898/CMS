@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>  <title>Bootstrap Example</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  margin: 0;
+	  font-family: Arial;
+	}
+
+	/* Style the images inside the grid */
+	.column img {
+	  opacity: 0.8;
+	  cursor: pointer;
+
+	}
+
+	.hh
+	{
+	  font-family: 'Lobster', cursive;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.hovereffect {
+
+
+
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	  cursor: default;
+	}
+
+	.hovereffect .overlay {
+	  width: 100%;
+	    height: 100%;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 0;
+	  left: 0;
+	}
+
+	.hovereffect img {
+	  display: block;
+	  position: relative;
+	  -webkit-transition: all 0.4s ease-in;
+	  transition: all 0.4s ease-in;
+	}
+
+	.hovereffect:hover img {
+	  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+	  filter: grayscale(1) blur(3px);
+	  -webkit-filter: grayscale(1) blur(3px);
+	  -webkit-transform: scale(1.2);
+	  -ms-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+
+	.hovereffect h2 {
+	  text-transform: uppercase;
+	  text-align: center;
+	  position: relative;
+	  font-size: 17px;
+	  padding: 10px;
+	  background: rgba(0, 0, 0, 0.6);
+	}
+
+	.hovereffect a.info {
+	  display: inline-block;
+	  text-decoration: none;
+	  padding: 7px 14px;
+	  border: 1px solid #fff;
+	  margin: 50px 0 0 0;
+	  background-color: transparent;
+	}
+
+
+
+	.hovereffect a.info, .hovereffect h2 {
+	  -webkit-transform: scale(0.7);
+	  -ms-transform: scale(0.7);
+	  transform: scale(0.7);
+	  -webkit-transition: all 0.4s ease-in;
+	  transition: all 0.4s ease-in;
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  color: #fff;
+	  text-transform: uppercase;
+	}
+
+	.hovereffect:hover a.info, .hovereffect:hover h2 {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  -webkit-transform: scale(1);
+	  -ms-transform: scale(1);
+	  transform: scale(1);
+	}
+	</style>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <!-- Brand -->
+		  <a class="navbar-brand" href="#"><img src="logo.png" style="width:50px"></a>
+
+		  <!-- Links -->
+		  <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				<span class="navbar-text">
+    Balance : $ 2180.00
+  </span>
+</li>
+				<li class="nav-item">
+					<a href="admin.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="login.html" class="nav-link"> Logout</a>
+				</li>
+		  </ul>
+		</nav>
+
+
+		<div class="container">
+		    <div class="row">
+		        <div class="col-lg-10 mx-auto col-12 text-center mb-3">
+		            <h1 class="mt-0 text-primary">Our Menu</h1>
+		            <p class="lead">Begin with a selection from our award winning beverage menu or choose a wine from our extensive wine list. Our wine list features over 100 different vintages and has received the chamber of commerce award of excellence.</p>
+		        </div>
+		        <div class="col-12 mt-4">
+		            <h3 class="text-center">Soup</h3>
+		            <hr class="accent my-5">
+		        </div>
+		        <div class="card-columns">
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$10</span>
+		                <h6 class="text-truncate">Pork Rice Noodle Soup</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$9</span>
+		                <h6 class="text-truncate">Scallop & Vegetable Soup</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$9</span>
+		                <h6 class="text-truncate">Sizzling Rice Soup</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$10</span>
+		                <h6 class="text-truncate">Hot Noodle Soup</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$9</span>
+		                <h6>Chicken Corn Soup</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$10</span>
+		                <h6 class="text-truncate">House Special Soup</h6>
+		            </div>
+		        </div>
+		        <div class="col-12 mt-4">
+		            <h3 class="text-center">Starters</h3>
+		            <hr class="accent my-5">
+		        </div>
+		        <div class="card-columns">
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$9.95</span>
+		                <h6 class="text-truncate">Carb Ragoon</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$8.95</span>
+		                <h6 class="text-truncate">Fried Shrimp</h6>
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$7.95</span>
+		                <h6 class="text-truncate">Shrimp Toast</h6>
+		                    </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$9.95</span>
+		                <h6 class="text-truncate">Green Onion Cake</h6>
+		              </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$8.95</span>
+		                <h6 class="text-truncate">Cold Noodles</h6>
+		                    </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$10</span>
+		                <h6 class="text-truncate">Steamed Dumplings</h6>
+		            </div>
+		        </div>
+		        <div class="col-12 mt-4">
+		            <h3 class="text-center">Main Plates</h3>
+		            <hr class="accent my-5">
+		        </div>
+		        <div class="card-columns">
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$17.95</span>
+		                <h6 class="text-underline">Lean Cuisine</h6>
+
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$25.95</span>
+		                <h6>Steamed Shrimp & Vegetable</h6>
+		                  </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$15.95</span>
+		                <h6>Steamed Scallop & Vegetable</h6>
+		                  </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$12.95</span>
+		                <h6>Steamed Beef & Vegetable</h6>
+
+		            </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$25.95</span>
+		                <h6>Steamed Pork & Vegetable</h6>
+		                  </div>
+		            <div class="card card-body">
+		                <span class="float-right font-weight-bold">$14.95</span>
+		                <h6>Steamed Chicken & Vegetable</h6>
+
+		            </div>
+		        </div>
+		        <div class="col-12 mt-4">
+		            <hr class="accent my-5">
+		        </div>
+
+		    </div>
+		</div>
+
+	</body>
+
+</html>
