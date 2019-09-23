@@ -1,0 +1,21 @@
+style.css
+*
+{margin: 0;
+padding: 0;
+}
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 70%;
+}
+#bgc{
+	color: white;
+}
+.menu-bar{
+	min-height: 8%;
+	background-image: "https://static.vecteezy.com/system/resources/thumbnails/000/133/727/small/WoodBackground54342.jpg";
+}

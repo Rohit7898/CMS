@@ -1,0 +1,19 @@
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 70%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-body {
+	width: 100%;
+	position: center-center;
+
+}
