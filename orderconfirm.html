@@ -29,7 +29,17 @@ body {
   font-family: 'Lobster', cursive;
 }
 /* Clear floats after the columns */
-
+.card-columns
+{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    height: 500px;
+    margin-top: -50px /* half of you height */
+    width: 800px;
+    margin-left: -100px
+  transform: translate(-20%, -50%);
+} /* half of you width */
 </style>
 
 </head>
@@ -80,6 +90,7 @@ body {
                 <h6 class="text-truncate">Tax</h6>
                 <span class="float-right font-weight-bold">$31.38</span>
                 <h6 class="text-truncate">Total</h6>
+                <a href="orderhistoryuser.html"><button>Order History</button></a>
                 <a href="token.html"><button>Confirm Order</button></a>
             </div>
           </div>
