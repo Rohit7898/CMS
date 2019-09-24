@@ -1,6 +1,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 250px;
+
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -35,12 +36,8 @@ button:hover, a:hover {
   width: 100%;
   font-size: 18px;
 
-}
 
-#header{
-  background : rgb(0,0,0);
 }
-
 
 
 
@@ -54,7 +51,7 @@ button:hover, a:hover {
      
   background-size: cover;     
   background-position: center center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 
     height : 100vh;
 }
@@ -97,8 +94,3 @@ button:hover, a:hover {
       color: #262626;
    
    }
-#sticky-footer {
-    background :rgb(0,0,0);
-  flex-shrink: none;
-}
-

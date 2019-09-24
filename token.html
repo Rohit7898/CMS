@@ -10,18 +10,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-<script>
-(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});</script>
 <style>
 * {
   box-sizing: border-box;
@@ -100,7 +88,6 @@ body, html {
 .back {
   color: #fff;
 }
-
 </style>
 </head>
 <body>
@@ -111,17 +98,16 @@ body, html {
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+  <a href="VendorMenu.html" class="btn btn-info" role="button">Log out</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </nav>
-
 <div class="container">
     <div class="row">
-
+    	<div class="bg-image"></div>
 
 <div class="bg-text">
   <h1>Order Confirmation</h1>
@@ -130,6 +116,7 @@ body, html {
 
 
     </div>
+<<<<<<< HEAD
 </div>
 
 </body>
@@ -142,5 +129,17 @@ body, html {
           </div>
         </footer>
         <!-- Footer -->
+=======
+</div><!-- Footer -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <img class="me-pic" src="logo.png" alt=""><br>
+      <a class="back" href="#main"><i class="fas fa-caret-up fa-3x"></i></a>
+      <p>©2019 AAR</p>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+>>>>>>> 90cbdd46ae119669a19b9be49897585b8b1a5bf5
 </body>
 </html>
