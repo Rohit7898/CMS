@@ -32,7 +32,25 @@ body {
   font-family: 'Lobster', cursive;
 }
 /* Clear floats after the columns */
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
 
+}
+.me-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.back {
+  color: #fff;
+}
 </style>
 </head>
 <body>
@@ -174,5 +192,14 @@ body {
 
     </div>
 </div>
+<!-- Footer -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <img class="me-pic" src="logo.png" alt=""><br>
+      <a class="back" href="#main"><i class="fas fa-caret-up fa-3x"></i></a>
+      <p>©2019 AAR</p>
+    </div>
+  </footer>
+  <!-- Footer -->
 </body>
 </html>
