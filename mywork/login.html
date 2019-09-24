@@ -13,6 +13,42 @@
 </head>
 
 <body>
+ <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+   Brand 
+
+  <a class="navbar-brand" href="#"><img src="logo.png" style="width:50px"></a>
+
+
+
+  
+
+  <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item">
+
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+
+    </li>
+
+  </ul> -->
+  <div class="header">
+  <a href="#" class="logo"><img src ="logo.png" style="width:50px"></a>
+  <!--<div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>-->
+</div>
+
+
+
 
 	<div class= "container-fluid h-100">
 		<div class = "d-flex flex-column justify-content-center h-100 align-items-center p-4">
@@ -22,6 +58,17 @@
 				<div class = "card-body">
 					<input type ="text" name="uname" id="uname" class="form-control form-control-lg m-2" placeholder="Username">
 					<input type ="password" name="pass" id="pass" class="form-control form-control-lg m-2" placeholder="Password">
+					<form>
+    					
+						<select id="colorSelect" class="form-control form-control-lg m-2" >
+						<option value="" disabled selected>Select your Role</option>
+						<option>User</option>
+						<option>Vendor</option>
+						<option>Admin</option>
+						<!--<option>TOI</option>-->
+						</select>
+						<!--<input type="button" onclick="removecolor()" value="Remove">-->
+					</form>
 					<button class ="btn btn-success float-right m-2" id="login-button" onClick="onclicked()"> SignIn </button>
                                                                                                    
 
@@ -31,7 +78,33 @@
 			</div>
 
 		</div>
-	</div>		
+	</div>
+
+
+
+
+<!-- Footer -->
+ <footer id="sticky-footer" class="py-4 text-white-50">
+    <div class="container ">
+      <div class = "d-flex flex-column justify-content-center align-items-center p-1">
+       <div class="col-lg-1 col-md-8 mb-2">
+     <!--  <div class="view overlay z-depth-1-half">-->
+      <img src="logo.png" class="img-fluid"
+            alt="">
+            <a href="">
+               <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      <small>&copy;2019 AAR</small>
+    </div>
+    </div>
+  </footer>
+<!-- Footer -->
+
+
+  
+  
+		
 
 
 
@@ -41,9 +114,15 @@
          console.log("clicked");
          var usname = document.getElementById("uname").value;
          var passname = document.getElementById("pass").value;
+         var role = document.getElementById("colorSelect").selectedIndex;
 
          var empuname = "emp";
-         var vuname    = "vendor";
+         var vuname    = "american";
+         var vuname1    = "indian";
+         var vuname2   = "mexican";
+         var vuname3    = "italian";
+         var vuname4    = "medit";
+         var vuname5    = "chinese";
          var adminuname = "admin";
 
          var emppass   = "123";
@@ -51,27 +130,66 @@
 
          var adminpass  = "123";
 
-         if(usname == "emp" && passname== "123")
+         if(usname == "emp" && passname== "123" && role == 1)
          {
 
          	alert("You are logged in as "+ usname);
-         	window.location.href( "user.html");
+         	window.location.href( "VendorMenuUser.html");
          }
         
          else 
-         	if (usname == vuname && passname == vpass)
+         	if (usname == vuname && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
-         	window.location.href("vendor.html");
+         	window.location.href("Americanprofile.html");
          }
+else 
+         	if (usname == vuname1 && passname == vpass && role == 2)
+         {
 
+         	window.alert("You are logged in as "+usname);
+         	window.location.href("Indianprofile.html");
+         }else 
+         	if (usname == vuname2 && passname == vpass && role == 2)
+         {
+
+         	window.alert("You are logged in as "+usname);
+         	window.location.href("Chineseprofile.html");
+         }else 
+         	if (usname == vuname3 && passname == vpass && role == 2)
+         {
+
+         	window.alert("You are logged in as "+usname);
+         	window.location.href("Italianprofile.html");
+         }else 
+         	if (usname == vuname4 && passname == vpass && role == 2)
+         {
+
+         	window.alert("You are logged in as "+usname);
+         	window.location.href("Mediterraneanprofile.html");
+         }else 
+         	if (usname == vuname5 && passname == vpass && role == 2)
+         {
+
+         	window.alert("You are logged in as "+usname);
+         	window.location.href("Mexicanprofile.html");
+         }
          else 
-         	if (usname == adminuname && passname == adminpass)
+         	if (usname == adminuname && passname == adminpass && role == 3)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("admin.html");
+
+         }
+         else 
+         	if (usname == "" || passname == "" || role == 0)
+         {
+
+         	window.alert("Please enter a username or password or role ");
+         	location.reload("login.html");
+         	document.getElementById("colorSelect").selectedIndex=0;
 
          }
          else
@@ -79,11 +197,15 @@
 
          	window.alert("Incorrect username or password.Please try again");
          	location.reload("login.html");
+         	document.getElementById("colorSelect").selectedIndex=0;
+
          }
 
        }
 
 	</script>
+ 
+
 </body>
 
 </html>
