@@ -35,8 +35,12 @@ button:hover, a:hover {
   width: 100%;
   font-size: 18px;
 
-
 }
+
+#header{
+  background : rgb(0,0,0);
+}
+
 
 
 
@@ -50,7 +54,7 @@ button:hover, a:hover {
      
   background-size: cover;     
   background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
     height : 100vh;
 }
@@ -93,4 +97,8 @@ button:hover, a:hover {
       color: #262626;
    
    }
+#sticky-footer {
+    background :rgb(0,0,0);
+  flex-shrink: none;
+}
 
