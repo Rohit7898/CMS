@@ -10,6 +10,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<script>
+(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});</script>
 <style>
 * {
   box-sizing: border-box;
@@ -70,7 +82,7 @@ body, html {
   text-align: center;
 }
 #footer {
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -88,6 +100,7 @@ body, html {
 .back {
   color: #fff;
 }
+
 </style>
 </head>
 <body>
@@ -121,6 +134,7 @@ body, html {
 
 </body>
 <!-- Footer -->
+<<<<<<< HEAD
   <footer id="footer">
     <div class="container-fluid">
       <img class="me-pic" src="logo.png" alt=""><br>
@@ -129,4 +143,15 @@ body, html {
     </div>
   </footer>
   <!-- Footer -->
+=======
+        <footer id="footer">
+          <div class="container-fluid">
+            <img class="me-pic" src="logo.png" alt=""><br>
+            <a class="back" href="#main"><i class="fas fa-caret-up fa-3x"></i></a>
+            <p>©2019 AAR</p>
+          </div>
+        </footer>
+        <!-- Footer -->
+</body>
+>>>>>>> 35e912acf7be2f57e46a8f4efc739a18e2417688
 </html>
