@@ -15,13 +15,13 @@
 <body>
  <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-   Brand 
+   Brand
 
   <a class="navbar-brand" href="#"><img src="logo.png" style="width:50px"></a>
 
 
 
-  
+
 
   <ul class="navbar-nav ml-auto">
 
@@ -59,7 +59,7 @@
 					<input type ="text" name="uname" id="uname" class="form-control form-control-lg m-2" placeholder="Username">
 					<input type ="password" name="pass" id="pass" class="form-control form-control-lg m-2" placeholder="Password">
 					<form>
-    					
+
 						<select id="colorSelect" class="form-control form-control-lg m-2" >
 						<option value="" disabled selected>Select your Role</option>
 						<option>User</option>
@@ -70,9 +70,9 @@
 						<!--<input type="button" onclick="removecolor()" value="Remove">-->
 					</form>
 					<button class ="btn btn-success float-right m-2" id="login-button" onClick="onclicked()"> SignIn </button>
-                                                                                                   
 
-			
+
+
 				</div>
 
 			</div>
@@ -102,14 +102,14 @@
 <!-- Footer -->
 
 
-  
-  
-		
+
+
+
 
 
 
 	<script>
-       
+
        function onclicked(){
          console.log("clicked");
          var usname = document.getElementById("uname").value;
@@ -136,46 +136,46 @@
          	alert("You are logged in as "+ usname);
          	window.location.href( "VendorMenuUser.html");
          }
-        
-         else 
+
+         else
          	if (usname == vuname && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Americanprofile.html");
          }
-else 
+else
          	if (usname == vuname1 && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Indianprofile.html");
-         }else 
+         }else
          	if (usname == vuname2 && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Chineseprofile.html");
-         }else 
+         }else
          	if (usname == vuname3 && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Italianprofile.html");
-         }else 
+         }else
          	if (usname == vuname4 && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Mediterraneanprofile.html");
-         }else 
+         }else
          	if (usname == vuname5 && passname == vpass && role == 2)
          {
 
          	window.alert("You are logged in as "+usname);
          	window.location.href("Mexicanprofile.html");
          }
-         else 
+         else
          	if (usname == adminuname && passname == adminpass && role == 3)
          {
 
@@ -183,7 +183,7 @@ else
          	window.location.href("admin.html");
 
          }
-         else 
+         else
          	if (usname == "" || passname == "" || role == 0)
          {
 
@@ -204,7 +204,7 @@ else
        }
 
 	</script>
- 
+
 
 </body>
 
