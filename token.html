@@ -10,18 +10,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-<script>
-(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});</script>
 <style>
 * {
   box-sizing: border-box;
@@ -81,26 +69,6 @@ body, html {
   padding: 20px;
   text-align: center;
 }
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-
-}
-.me-pic {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.back {
-  color: #fff;
-}
-
 </style>
 </head>
 <body>
@@ -118,10 +86,16 @@ body, html {
       </li>
     </ul>
   </nav>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="logo.png" style="width:50px"></a>
 
+  <!-- Links -->
+
+</nav>
 <div class="container">
     <div class="row">
-
+    	<div class="bg-image"></div>
 
 <div class="bg-text">
   <h1>Order Confirmation</h1>
@@ -131,27 +105,5 @@ body, html {
 
     </div>
 </div>
-
 </body>
-<!-- Footer -->
-<<<<<<< HEAD
-  <footer id="footer">
-    <div class="container-fluid">
-      <img class="me-pic" src="logo.png" alt=""><br>
-      <a class="back" href="#main"><i class="fas fa-caret-up fa-3x"></i></a>
-      <p>©2019 AAR</p>
-    </div>
-  </footer>
-  <!-- Footer -->
-=======
-        <footer id="footer">
-          <div class="container-fluid">
-            <img class="me-pic" src="logo.png" alt=""><br>
-            <a class="back" href="#main"><i class="fas fa-caret-up fa-3x"></i></a>
-            <p>©2019 AAR</p>
-          </div>
-        </footer>
-        <!-- Footer -->
-</body>
->>>>>>> 35e912acf7be2f57e46a8f4efc739a18e2417688
 </html>
